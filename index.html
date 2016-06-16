@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html";Charset="UTF-8"  />        
+        <link href="static/css/bootstrap.css" rel="stylesheet">
+        <link href="static/css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Start loading scripts-->
+        <script src="static/js/angular.js"></script>
+        <script src="static/js/angular-route.js"></script>
+        <script src="static/js/angular-sanitize.js"></script>
+        <script src="static/js/app.js"></script>
+        <!-- End loading scripts-->
+        <!--Container for header and logo -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <img src="static/img/logo.png" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active"><a href="#/home">Home</a></li>
+                                    <!--<li><a href="#/messages">Messages</a></li>-->
+                                </ul></div>
+                        </div>
+                    </div><!--row closed-->
+                </div><!--col-lg-12 closed-->
+            </div><!--row closed-->
+        </div><!--container closed-->
+        <div ng-view></div>
+
+    </body>
+</html>

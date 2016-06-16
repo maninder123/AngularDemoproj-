@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Home Page</h1>
+             <div ng-bind-html="headMsg"></div>
+            <div  class="jumbotron" ng-repeat="data in presentData"> 
+                <p  ng-if="data.type == 'text'">{{ data.message}} </p><!-- show text if type is text -->
+                <p ng-if="data.type == 'image'"><!-- show image if type is image -->
+                    <img  height='200' src="static/img/{{ data.message}}" alt="image"  />                       
+                </p>
+                <span class="expiry_span">Expires on {{ data.expiry}}</span><!-- Span to show expiry dates -->
+            </div><!--jumbotron closed-->
+
+        </div>
+    </div><!--row closed-->
+</div><!--container closed-->
